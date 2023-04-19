@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="styleseet" href="style.css"/>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+
+        body {
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            background: url(影.jpg);
+            background-size:cover;
+        }
+
+        .box {
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            width:300px;
+            height:320px;
+            border-top:1px solid rgba(255,255,255,0.5);
+            border-left:1px solid rgba(255,255,255,0.5);
+            border-right:1px solid rgba(255,255,255,0.2);
+            border-bottom:1px solid rgba(255,255,255,0.2);
+            backdrop-filter:blur(10px)
+        }
+
+        .box .input-box {
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:start;
+            margin-bottom:10px;
+        }
+
+        .box >h2 {
+            color:rgba(255,255,255,0.9);
+            margin-bottom:5px;
+            font-size:25px;
+        }
+
+        .box .input-box >label {
+            color:rgba(255,255,255,0.8);
+            margin-bottom:5px;
+            font-size:13px;
+        }
+
+        .box .input-box >input {
+            color:rgba(255,255,255,0.9);
+            font-size:15px;
+            height:27px;
+            width:210px;
+            background:rgba(255,255,255,0.3);
+            border:1px solid rgba(255,255,255,0.5);
+            border-radius:5px;
+            transition:0.2s;
+            outline:none;
+            padding:0 10px;
+        }
+
+        .box .input-box >input:focus {
+            border:1px solid rgba(255,255,255,0.8);
+        }
+
+        .box .btn-box {
+            width:250px;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:start;
+        }
+
+        .box .btn-box >a {
+            text-decoration:none;
+            color:rgba(255,255,255,0.9);
+            font-size:13px;
+            transition:0.2s;
+            width:230px;
+            text-align:end;
+        }
+
+        .box .btn-box >div >button {
+            width:100px;
+            height:30px;
+            margin-left:10px;
+            margin-top:5px;
+            background:rgba(194,145,231,0.9);
+            color:rgba(255,255,255,0.9)
+            border:1px solid rgba(194,145,231,0.8);
+            border-radius:5px;
+        }
+
+    </style>
+</head>
+<body>
+  <div class="box">
+      <h2>login</h2>
+      <div class="input-box">
+        <label>账号</label>
+        <input type="text"/>
+      </div>
+      <div class="input-box">
+        <label>密码</label>
+        <input type="password"/>
+      </div>
+      <div class="btn-box">
+        <a href="#">忘记密码?</a>
+        <div>
+          <button>登录</button>
+          <button>注册</button>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
