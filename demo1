@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin:0px;
+        }
+        .box {
+           border:1px solid #999;
+        }
+        .flex {
+            display:flex;
+        }
+        .column {
+            flex-direction:column;
+        }
+        .row {
+            flex-direction:row;
+        }
+        .box {
+            height:150px;
+            width:800px;
+            margin-left:50px;
+        }
+        .yinying {
+            box-shadow:rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+                rgb(0 0 0 /14%) 0px 1px 1px 0px,rgb(0 0 0 /12%) 0px 1px;
+        }
+        img {
+            margin:0px;
+
+        }
+        .search >input {
+            width:408px;
+            height:40px;
+            border:1px solid rgb(255,255,255,0.1);
+        }
+        p {
+            color:white;
+        }
+        *{
+            border:1px solid #white;
+        }
+        .heng {
+            border:1px solid #eee;
+        }
+    </style>
+</head>
+<body class="flex column">
+    <!--头部栏-->
+    <div class="up_lan yinying flex row" style="width:2135;height:75px;background-color:rgb(36,41,47)">
+        <!--tou_左区-->
+        <div class="tou_left flex row" style="width:1155px">
+            <div class="tou_img flex" style="width:90px;height:75px;justify-content:flex-end;align-items:center">
+                <img src="https://316251204.github.io/-/1)图片9.jpg"
+                     width="48px"
+                     height="48px"
+                     alt="1)图片9"/>
+            </div>
+            <div class="tou_search flex" style="width:310px;height:75px;justify-content:center;align-items:center">
+                <input type="text" placeholder="Search or jump to……" style="width:300px;height:30px;margin:5px"/>
+            </div>
+            <div class="tou_text_txt flex" style="width:450px;height:75px;justify-content:space-around;align-items:center;color:white">
+                <a href="" style="color:white">Pulls</a>
+                <a href="" style="color:white">Issues</a>
+                <a href="" style="color:white">Codespaces</a>
+                <a href="" style="color:white">Marketplace</a>
+                <a href="" style="color:white">Explore</a>
+            </div>
+        </div>
+        <!--tou_右区-->
+        <div class="tou_right flex row">
+            <div class=""></div>
+        </div>
+    </div>
+    <!--内容栏-->
+    <div class="domn_lan flex row" style="height:1200px">
+        <!--左区-->
+        <div class="left yinying flex column" style="width:350px;border-right:1px solid #999">
+            <div class="heng_1 flex row" style="height:50px;width:350px">
+                <div class="heng_1_left flex" style="width:150px;height:50px;justify-content:center;align-items:flex-end;font-size:14px">
+                        Top Repositioies
+                </div>
+                <div class="heng_1 right flex row" style="width:200px;height:50px;justify-content:flex-end;align-items:flex-end">
+                    <div class="flex" style="background-color:green;width:45px;height:20px;margin-right:20px"></div>
+                </div>
+            </div>
+            <div class="heng_2 flex" style="height:60px;justify-content:center;align-items:center">
+                <input type="text" placeholder="Find a repository……" style="width:300px;height:30px;margin:5px"/>
+            </div>
+            <div class="heng" style="height:100px"></div>
+            <div class="heng" style="height:100px"></div>
+            <div class="heng" style="height:100px"></div>
+        </div>
+        <!--右区-->
+        <div class="right flex column" style="background-color:rgb(246, 248, 250);width:1600px">
+            <div class="box yinying" style="margin-top:130px;"></div>
+            <div class="box yinying" style="margin-top:125px;"></div>
+            <div class="box yinying" style="margin-top:20px;"></div>
+        </div>
+    </div>
+</body>
+</html>
